@@ -19,4 +19,8 @@ public record CustomerController(CustomerService customerService) {
     public List<Customer> getAllCustomer(){
         return  customerService.getAllCustomer();
     }
+    @GetMapping
+    public List<Customer> getAllCustomers(){
+        return  customerService.getAllCustomer();
+    }
 }
