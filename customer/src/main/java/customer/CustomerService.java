@@ -22,4 +22,7 @@ public record CustomerService(CustomerRepository customerRepository) {
        customerRepository.save(customer);
     }
 
+    public List<Customer> getAllCustomer() {
+        return customerRepository.findAll();
+    }
 }
